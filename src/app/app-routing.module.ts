@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ChatRoutes } from './pages/chat/chat-routing.module';
+import { HomeRoutes } from './pages/home';
   
 export const routes: Routes = [
 	{ 
@@ -7,6 +9,9 @@ export const routes: Routes = [
 		redirectTo: '/home', 
 		pathMatch: 'full' 
 	},
+
+	...HomeRoutes,
+	...ChatRoutes
 ];
  
 @NgModule({

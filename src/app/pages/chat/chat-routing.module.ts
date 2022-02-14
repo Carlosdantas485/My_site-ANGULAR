@@ -3,7 +3,7 @@ import { ChatComponent } from './chat.component';
  
 export const ChatRoutes: Routes = [
 	{ 
-		path: 'chat', 
+		path: 'products', 
 		component: ChatComponent 
 	}
 ];
